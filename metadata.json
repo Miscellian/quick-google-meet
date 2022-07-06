@@ -1,0 +1,8 @@
+{
+  "name": "Quick Google Meet",
+  "description": "Quick open your personal google meet conference",
+  "uuid": "quick-google-meet@gmail.com",
+  "shell-version": [
+    "42"
+  ]
+}
