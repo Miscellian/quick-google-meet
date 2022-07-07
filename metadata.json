@@ -1,8 +1,9 @@
 {
   "name": "Quick Google Meet",
-  "description": "Quick open your personal google meet conference",
+  "description": "Quick open your personal google meet conference. This extension is not affiliated with Google",
   "uuid": "quick-google-meet@gmail.com",
   "shell-version": [
     "42"
-  ]
+  ],
+  "url": "https://github.com/Miscellian/quick-google-meet"
 }

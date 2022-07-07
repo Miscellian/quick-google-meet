@@ -48,13 +48,13 @@ const Indicator = GObject.registerClass(
 				// Copy link to clipboard
 				St.Clipboard.get_default().set_text(St.ClipboardType.CLIPBOARD, `http://g.co/meet/${GLib.get_real_name()}`);
 				// Open link google chrome
-				Util.spawn(["/bin/google-chrome-stable", `http://g.co/meet/${GLib.get_real_name()}`]);
+				Util.spawn(["xdg-open", `http://g.co/meet/${GLib.get_real_name()}`]);
 			});
 			dynamicLinkItem.connect("activate", () => {
 				// Copy link to clipboard
 				St.Clipboard.get_default().set_text(St.ClipboardType.CLIPBOARD, `http://g.co/meet${GLib.get_real_name()}${Date.now()}`);
 				// Open link google chrome
-				Util.spawn(["/bin/google-chrome-stable", `http://g.co/meet/${GLib.get_real_name()}${Date.now()}`]);
+				Util.spawn(["xdg-open", `http://g.co/meet/${GLib.get_real_name()}${Date.now()}`]);
 			});
 
 			this.menu.addMenuItem(staticLinkItem);
